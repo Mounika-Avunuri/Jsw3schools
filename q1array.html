@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        var fruits_arr = ['Apple', 'Mango', 'Grapes', 'Orange', 'Fig', 'Cherry'];
+
+        function checkValue(value, arr) {
+            var status = -1;
+
+            for (var i = 0; i < arr.length; i++) {
+                var name = arr[i];
+                if (name == value) {
+                    status = fruits_arr.indexOf(name);
+                    break;
+                }
+
+            }
+
+            return status;
+        }
+        document.getElementById("demo").innerHTML = 'status : ' + checkValue('Mango', fruits_arr);
+        document.getElementById("demo1").innerHTML = 'status : ' + checkValue('guava', fruits_arr);
+
+    </script>
+</body>
+
+
+</html>

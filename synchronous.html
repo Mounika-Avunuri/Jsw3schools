@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("A");
+        function asynchronous()
+        {
+            setTimeout(()=>{
+                console.log("got the API data")},1000)
+        }
+asynchronous();
+let arr=[1,2,3,4,5];
+arr.forEach(function (data){
+    console.log(data);
+})
+setTimeout(function(){
+    console.log("hello i am asynchronously executed callback")
+},1000);
+
+function choco(cb){
+    cb("hello chocolate")
+}
+choco(function(data){
+    console.log(data);
+})
+        
+        console.log("B");
+        for(let i=0;i<=10;i++){
+            console.log(i);
+        }
+        console.log("C");
+    </script>
+</body>
+</html>

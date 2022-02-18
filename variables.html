@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>numbers are written without double quotes</p>
+    <p>strings are written with double quotes </p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+
+
+    <script>
+        var pi = 3.14;
+        var a222 = "mounika";
+        var $gg = "reddy";
+        document.getElementById("demo1").innerHTML = pi + "<br> " + a222 + "<br>" + $gg;
+    </script>
+    <script>
+        var carName = "volvo", price = 900;
+        var carName = "bmw";
+        var price;
+        var x = "5" + 2 + 3;
+        var y = 5 + 4 + "4";
+        document.getElementById("demo2").innerHTML = carName;
+        document.getElementById("demo3").innerHTML = price;
+
+        document.getElementById("demo4").innerHTML = price;
+        document.getElementById("demo4").innerHTML = x;
+        document.getElementById("demo4").innerHTML = y;
+
+
+
+    </script>
+    <script>
+        var x = 10;
+        //here x is 10
+        document.getElementById("demo7").innerHTML = x;
+        {
+            //let and var both can be accessed here
+            let _a = " mounika";
+            var _b = "reddy";
+            document.getElementById("demo5").innerHTML = _a + " " + _b;
+            var x = 12;
+            document.getElementById("demo8").innerHTML = x;
+            //here x is 12
+
+        }
+        //let cannot be accessed here
+        //var can be accessed here
+        // document.getElementById("demo5").innerHTML=_a + " "+_b;
+        document.getElementById("demo6").innerHTML = _b;
+        document.getElementById("demo9").innerHTML = x;
+        //here x is 12
+
+        
+    </script>
+</body>
+
+</html>

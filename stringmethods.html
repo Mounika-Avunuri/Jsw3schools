@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+<button onclick="myFunction()">Try it</button>
+<button onclick="myfunction1()">Try it</button>
+<button onclick="myfunction2()">Try it</button>
+
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6">please visit Microsoft</p>
+    <p id="demo7">hi digikull</p>
+    <p id="demo8">I AM MOUNIKA</p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+
+
+
+
+
+    <script>
+         let str = "Apple, banana, kiwi";
+         document.getElementById("demo").innerHTML = str.slice(7,13);
+         document.getElementById("demo2").innerHTML = str.slice(7);
+         document.getElementById("demo3").innerHTML = str.substr(7,6);
+         document.getElementById("demo4").innerHTML = str.slice(-12,-6);
+         document.getElementById("demo5").innerHTML = str.substring(12,7);
+
+         document.getElementById("demo1").innerHTML = str.substr(7,6);
+    </script>
+    <script>
+        function myFunction() {
+          let text = document.getElementById("demo6").innerHTML;
+          document.getElementById("demo").innerHTML =
+          text.replace("Microsoft","W3Schools");
+        }
+        </script>
+        <script>
+            function myfunction1(){
+                 let txt = document.getElementById("demo7").innerHTML;
+                 document.getElementById("demo7").innerHTML = txt.toUpperCase();
+            }
+        </script>
+         <script>
+            function myfunction2(){
+                 let txt = document.getElementById("demo8").innerHTML;
+                 document.getElementById("demo8").innerHTML = txt.toLowerCase();
+            }
+        </script>
+<script>
+  let text1 = "hello";
+  let text2 = "world";
+  let text3 =  text1.concat(" "+text2);
+  document.getElementById("demo9").innerHTML = text3;
+  let text = "          hi            ";
+  alert(text.trim());
+  document.getElementById("demo10").innerHTML = text1.charAt(0);
+  document.getElementById("demo11").innerHTML = text1[1];
+
+</script>
+
+        
+    
+</body>
+</html>

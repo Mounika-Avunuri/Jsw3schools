@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Arrays</h2>
+
+<p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+<button onclick="myfunction()">try it</button>
+
+    <script>
+    cars = ["ford","maruthi","BMW"]
+    document.getElementById("demo").innerHTML=cars;
+    document.getElementById("demo1").innerHTML=cars;
+    document.getElementById("demo2").innerHTML=cars[0];
+
+
+    cars[2]="saab";
+    document.getElementById("demo3").innerHTML=cars;
+    document.getElementById("demo4").innerHTML=cars.length;
+    document.getElementById("demo5").innerHTML=cars.sort();
+    document.getElementById("demo6").innerHTML=cars[cars.length-1];
+let clen = cars.length;
+text="<ul>";
+for(let i=0;i<clen;i++){
+    text+="<li>"+cars[i]+"</li>";
+}
+text+="</ul>";
+document.getElementById("demo7").innerHTML=text;
+
+</script>
+<script>
+    const fruits=["apple","banana","orange","pineapple"];
+    let text="<ul>";
+    fruits.forEach(myFunction);
+    text+="</ul>";
+    document.getElementById("demo8").innerHTML=text;
+    function myFunction(value){
+        text+="<li>"+value+"</li>";
+    }
+</script>
+<script>
+    const names=["mounika","pravalika","jagdish"];
+    names.push("madhu");
+    let text1="<ul>";
+    names.forEach(myFunction);
+    text1+="</ul>";
+    document.getElementById("demo9").innerHTML=text1;
+function myFunction(value){
+    text1+="<li>"+value+"</li>";
+}
+
+</script>
+   
+</body>
+</html>

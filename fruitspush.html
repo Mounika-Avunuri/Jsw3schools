@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myFunction()">try it</button>
+    <p id=demo></p>
+    <p id=demo1></p>
+    <p id=demo2></p>
+    <p id=demo3></p>
+
+    <script>
+        const fruits=["apple","banana","orange"];
+        document.getElementById("demo").innerHTML=fruits;
+        function myFunction(){
+            fruits.push("Kiwi");
+            document.getElementById("demo1").innerHTML=fruits;
+        }
+    </script>
+     <script>
+        const fruits1=["apple","banana","orange","mango"];
+        document.getElementById("demo2").innerHTML=fruits1;
+    
+            fruits1.shift();
+            document.getElementById("demo3").innerHTML=fruits1;
+    
+    </script>
+</body>
+</html>

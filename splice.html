@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+
+<button onclick="myFunction()">try it</button>
+<button onclick="myFunction1()">try it splice</button>
+
+    <script>
+        const fruits=["orange","apple","banana","kiwi"];
+        document.getElementById("demo1").innerHTML = fruits;
+        function myFunction(){
+            fruits.splice(2,0,"lemon","kiwi");
+            document.getElementById("demo2").innerHTML = fruits;
+        }
+    </script>
+    <script>
+        const fruits1=["orange","apple","banana","graphes"];
+        document.getElementById("demo3").innerHTML = fruits1;
+        function myFunction1(){
+            let removed=fruits1.splice(2,2,"kiwi","guava");
+            document.getElementById("demo4").innerHTML = removed;
+            document.getElementById("demo5").innerHTML = fruits1;
+
+        }
+
+    </script>
+</body>
+</html>

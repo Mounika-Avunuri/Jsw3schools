@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div onmousedown="mdown(this)" onmouseup="mup(this)"
+    style="background-color: royalblue; height:40px; width:70px; padding:35px" >click me</div>
+    <script>
+        function mdown(obj){
+            obj.style.backgroundColor="red";
+            obj.innerHTML="release me";
+        }
+        function mup(obj){
+            obj.style.backgroundColor="green";
+            obj.innerHTML="Thank you";
+        }
+
+
+    </script>
+</body>
+</html>
